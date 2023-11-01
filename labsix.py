@@ -1,6 +1,11 @@
 #Trinity Saunders
 
-
+def decode(password):
+    decoded_password = ""
+    for num in password:
+        og_password = int((str(num) - 3) % 10)
+        decoded_password += og_password
+    return password
 
 def menu():
     print("\nMenu\n-------------\n1. Encode\n2. Decode\n3. Quit\n") #prints menu when called
