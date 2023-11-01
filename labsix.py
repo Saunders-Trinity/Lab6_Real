@@ -1,6 +1,6 @@
 #Trinity Saunders
 
-def decode(password):
+def decode(password): #Pushed by Simi
     decoded_password = ""
     for num in password:
         og_password = int((str(num) - 3) % 10)
